@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 72" width="64" height="72">
+  <!-- Stand-in Centrion shield. Replace this file with your real Centrion logo (keep the same file name), or change the src in index.html. -->
+  <defs>
+    <clipPath id="c"><path d="M32 2 60 12v24c0 17-12 28-28 34C16 64 4 53 4 36V12Z"/></clipPath>
+  </defs>
+  <path d="M32 2 60 12v24c0 17-12 28-28 34C16 64 4 53 4 36V12Z" fill="#141414"/>
+  <g clip-path="url(#c)" stroke="#C9A227" stroke-width="5">
+    <path d="M-10 40 40-10M2 52 52 2M14 64 64 14M26 76 76 26"/>
+  </g>
+  <path d="M32 2 60 12v24c0 17-12 28-28 34C16 64 4 53 4 36V12Z" fill="none" stroke="#C9A227" stroke-width="3"/>
+</svg>
