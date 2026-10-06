@@ -87,7 +87,7 @@
   @keyframes ping{0%{box-shadow:0 0 0 0 rgba(59,178,115,.55)}80%,100%{box-shadow:0 0 0 9px rgba(59,178,115,0)}}
 
   /* Hero visual: product UI collage */
-  .visual{position:relative;height:500px}
+  .visual{position:relative;height:520px}
   .bigD{position:absolute;right:4%;top:50%;width:400px;height:400px;margin-top:-200px}
   .bigD .d{position:absolute;inset:0;background:linear-gradient(145deg,#25232A,#1A191E);clip-path:path('M0 0 H200 C310 0 400 90 400 200 C400 310 310 400 200 400 H0 Z')}
   .bigD .c{position:absolute;left:21%;top:20%;width:48%;height:60%;background:linear-gradient(135deg,var(--orange-2),var(--orange));clip-path:polygon(0 0,40% 0,100% 50%,40% 100%,0 100%,60% 50%);filter:drop-shadow(0 0 30px rgba(241,79,28,.4))}
@@ -97,16 +97,16 @@
   .card .v{font:700 34px/1 var(--head);color:#fff;letter-spacing:-.01em}
   .card .s{color:#A9A5A1;margin-top:6px}
   .dot{width:8px;height:8px;border-radius:50%;background:var(--ok)}
-  .card-a{left:0;top:40px;width:250px}
+  .card-a{left:0;top:150px;width:260px}
   .card-a .bars{display:flex;align-items:flex-end;gap:5px;height:40px;margin-top:14px}
   .card-a .bars b{flex:1;background:#3A3741;border-radius:3px;transform-origin:bottom}
   .card-a .bars b.h{background:var(--orange)}
-  .card-b{right:0;top:12px;width:285px;font-family:var(--mono);font-size:12px}
+  .card-b{right:0;top:0;width:290px;font-family:var(--mono);font-size:12px}
   .card-b .line{color:#A9A5A1;white-space:nowrap}
   .card-b .line b{color:var(--ok);font-weight:500}
   .card-b .prog{height:5px;background:#3A3741;border-radius:99px;margin-top:12px;overflow:hidden}
   .card-b .prog i{display:block;height:100%;background:var(--ok);transform-origin:left}
-  .card-c{left:16%;bottom:24px;width:300px}
+  .card-c{right:4%;bottom:0;width:300px}
   .card-c svg{width:100%;height:56px;margin-top:10px;overflow:visible}
   .card-c .spark{fill:none;stroke:var(--orange);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
   .card-c .area{fill:url(#sparkfill)}
@@ -291,8 +291,10 @@
 
   @media (max-width:1060px){
     .hero-grid{grid-template-columns:1fr;padding-top:140px;padding-bottom:70px;gap:30px}
-    .visual{height:440px;max-width:560px;width:100%;margin:0 auto}
-    .bigD{width:300px;height:300px;margin-top:-150px;right:8%}
+    .visual{height:auto;max-width:640px;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card-in{position:relative;inset:auto!important;width:auto!important}
+    .card-c{grid-column:1 / -1}
+    .bigD{width:300px;height:300px;margin-top:-150px;right:-40px;opacity:.6}
     .services{grid-template-columns:repeat(2,1fr)}
     .products{grid-template-columns:1fr 1fr}
     .prod.feature{grid-template-columns:1fr}
@@ -316,11 +318,8 @@
     .wrap{padding:0 16px}
     section{padding:80px 0}
     .hero-grid{padding-top:120px}
-    .visual{height:400px}
-    .bigD{width:240px;height:240px;margin-top:-120px;right:0}
-    .card-a{width:210px;top:20px}
-    .card-b{width:220px;top:auto;bottom:118px;right:0}
-    .card-c{left:0;bottom:0;width:250px}
+    .visual{grid-template-columns:1fr;gap:12px}
+    .bigD{width:220px;height:220px;margin-top:-110px;right:-60px}
     .services,.products,.steps{grid-template-columns:1fr}
     .stats .wrap{grid-template-columns:1fr 1fr}
     .stat{padding:34px 0 34px 18px}
