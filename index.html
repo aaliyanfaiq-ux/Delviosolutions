@@ -288,6 +288,10 @@
   @media (hover:hover) and (pointer:fine){footer a:hover{color:var(--orange)}}
   .legal{border-top:1px solid #222026}
   .legal .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:22px;padding-bottom:22px;font-size:13px}
+  .legal .co{display:flex;flex-direction:column;gap:4px}
+  .legal .co-r{text-align:right}
+  .legal a{text-decoration:underline;text-underline-offset:2px}
+  @media (max-width:760px){.legal .co-r{text-align:left}}
 
   @media (max-width:1060px){
     .hero-grid{grid-template-columns:1fr;padding-top:140px;padding-bottom:70px;gap:30px}
@@ -631,9 +635,15 @@
   </div>
   <div class="legal">
     <div class="wrap">
-      <!-- EDIT: add your company number and registered office once Companies House confirms them -->
-      <span>© <span id="yr">2026</span> Delvio Solutions Ltd. Registered in England &amp; Wales.</span>
-      <span>delviosolutions.com</span>
+      <div class="co">
+        <span>© <span id="yr">2026</span> Delviosolutions Limited. Registered in England &amp; Wales, company number <a href="https://find-and-update.company-information.service.gov.uk/company/17526107" target="_blank" rel="noopener">17526107</a>.</span>
+        <span>Registered office: 115 Vinery Road, Cambridge, CB1 3DW.</span>
+      </div>
+      <div class="co co-r">
+        <!-- EDIT: once the ICO confirms, replace with: ICO registration number ZBxxxxxx -->
+        <span>ICO registration: application submitted</span>
+        <span>delviosolutions.com</span>
+      </div>
     </div>
   </div>
 </footer>
